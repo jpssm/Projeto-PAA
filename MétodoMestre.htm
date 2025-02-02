@@ -6,12 +6,12 @@
 <meta name="dc:creator" content="jpssm" />
 <meta name="dc:creator" content="teste" />
 <meta name="dc:creator" content="yuri" />
-<meta name="dc:title" content="Indu&#x00E7;&#x00E3;o" />
+<meta name="dc:title" content="M&#x00E9;todo Mestre" />
 
 
 
 <title>
-Indu&#x00E7;&#x00E3;o
+M&#x00E9;todo Mestre
 </title>
 
 <!-- Made with executable version 7.0 Release 3 Build 0 -->
@@ -1159,102 +1159,105 @@ I[0]=new Array();I[0][0]=100;
 I[0][1]='';
 I[0][2]='0';
 I[0][3]=new Array();
-I[0][3][0]=new Array('Verdadeiro','Alternativa errada!',0,0,1);
-I[0][3][1]=new Array('Falso','Alternativa certa! Devemos provar que f(n+1) \u00E9 verdadeiro para qualquer n>=C e n\u00E3o f(n)',1,100,1);
+I[0][3][0]=new Array('a>=1, b <= 1 e f \u00E9 assint\u00F3ticamente positiva','Item incorreto!',0,0,1);
+I[0][3][1]=new Array('a>=1, b > 1 e f \u00E9 assint\u00F3ticamente positiva','Alternativa correta!',1,100,1);
+I[0][3][2]=new Array('a ==  1 , b <= 1 e f \u00E9 assint\u00F3ticamente positiva','Item incorreto!',0,0,1);
+I[0][3][3]=new Array('a >=  1 , b > 1 e f \u00E9 assint\u00F3ticamente negativa','Item incorreto!',0,0,1);
 I[1]=new Array();I[1][0]=100;
 I[1][1]='';
 I[1][2]='0';
 I[1][3]=new Array();
-I[1][3][0]=new Array('Verdadeiro','Item correto.	caso base: n=1 	hip\u00F3tese: 1^3 + 2^3 + 3^3 + ... + k^3 = (k^2(k+1)^2)/4 para k>=1 	prova: para n = k + 1  => 1^3 + 2^3 + 3^3 + ... + k^3 + (k+1)^3 = (k^2(k+1)^2)/4+(k+1)^3(passo pela hip\u00F3tese) 			      		          	= (k+1)^2 * ((k^2)/4 + k + 1) 						= (k+1)^2 * (k^2+ 4k + 4)/4 						= (k+1)^2 * ((k+2)^2)/4(passo por algebra) 						= ((k+1)^2(k+2)^2)/4',1,100,1);
-I[1][3][1]=new Array('Falso','Alternativa errada!',0,0,1);
+I[1][3][0]=new Array('b = 2, a = 4 , f(n) = n','Item certo!',1,100,1);
+I[1][3][1]=new Array('b = 4, a = 2 , f(n) = n','Item incorreto!',0,0,1);
+I[1][3][2]=new Array('b = 1/2, a = 4 , f(n) = n','Item incorreto!',0,0,1);
+I[1][3][3]=new Array('b = 1/2, a = 4 , f(n) = n','Item incorreto!',0,0,1);
 I[2]=new Array();I[2][0]=100;
 I[2][1]='';
 I[2][2]='0';
 I[2][3]=new Array();
-I[2][3][0]=new Array('Verdadeiro','Item correto.	caso base: n=1 	hip\u00F3tese: 1 + 3 + 5 + ... + (2k - 1) = k^2 para k>=1 	prova: para n = k + 1  => 1 + 3 + 5 + ... + (2k - 1) + 2(2(k + 1) - 1) = k^2 + 2(2(k+1)-1)   (passo pela hip\u00F3tese) 			      			 = k^2 + 2k + 2 - 1 						 = k^2 + 2k + 1  						 = (k+1)^2		(passo por algebra)',1,100,1);
-I[2][3][1]=new Array('Falso','Alternativa errada!',0,0,1);
+I[2][3][0]=new Array('Verdadeiro','Item certo! T(n) = 4T(n/2) + n 	b = 2, a = 4, f(n) = n 	log2 4 = 2 	f(n) = n = O(n^(2-\u03B5)), ou n^2 / n = n^1 = \u2126(n^\u03B5 ), para \u03B5 = 1 	\u2234 T(n) = \u0398(n^2)',1,100,1);
+I[2][3][1]=new Array('Falso','Item incorreto!',0,0,1);
 I[3]=new Array();I[3][0]=100;
 I[3][1]='';
 I[3][2]='0';
 I[3][3]=new Array();
-I[3][3][0]=new Array('Verdadeiro','Item correto.',1,100,1);
-I[3][3][1]=new Array('Falso','Alternativa errada!',0,0,1);
+I[3][3][0]=new Array('Verdadeiro','Item Correto. T(n) = 4 T(n/2) + n^2 log n 	n^(logb a) = n^(log2 4) = n^2 , f(n) = \u0398(n^(log2 4)* log1 n) = \u0398(n^2 * log1 n) 	T(n) = \u0398(n^2 * log2 n) (caso 2 estendido)',1,100,1);
+I[3][3][1]=new Array('Falso','Item incorreto!',0,0,1);
 I[4]=new Array();I[4][0]=100;
 I[4][1]='';
 I[4][2]='0';
 I[4][3]=new Array();
-I[4][3][0]=new Array('Verdadeiro','Item correto. Base: se n = 2, ent\u00E3o T(2)=2 e 2log2 = 2 => t(2)= 2log2 	Hip\u00F3tese: assumindo que T(n) =nlgn se n = 2^k para algum inteiro k 	prova: se n = 2^(k+1) 		T(2^(k+1))	= 2T(2^(k+1)/2) + 2^(k+1) 			 	= 2T(2^k) + 2^(k+1) 				= 2T(2^klg2^k) + 2^(k+1) 	(passo pela hip\u00F3tese) 				= 2^(k+1) ((lg2^k)+1) 				= 2^(k+1) ((lg2^k)+lg2) 				= 2^(k+1) log2^(k+1)',1,100,1);
-I[4][3][1]=new Array('Falso','Alternativa errada!',0,0,1);
+I[4][3][0]=new Array('Verdadeiro','Item incorreto!',0,0,1);
+I[4][3][1]=new Array('Falso','Item certo! T(n) = T(n/2) + log n 	b = 2, a = 1, f(n) = log n 	n^(log2 1) = n^0 = 1 	f(n) = log n \u2209 \u2126(n^(0+\u03B5)), ou f(n) / n^(log2 1) / = log n \u2209 \u2126(n^\u03B5) 	\u2234 CASO 3 n\u00E3o se aplica',1,100,1);
 I[5]=new Array();I[5][0]=100;
 I[5][1]='';
 I[5][2]='0';
 I[5][3]=new Array();
-I[5][3][0]=new Array('Determinar o n\u00FAmero exato de opera\u00E7\u00F5es executadas pelo algoritmo.','Alternativa errada!',0,0,1);
-I[5][3][1]=new Array('Resolver recorr\u00EAncias substituindo os termos repetidamente at\u00E9 encontrar um padr\u00E3o.','Item Certo.O m\u00E9todo da itera\u00E7\u00E3o busca resolver recorr\u00EAncias expandindo seus termos repetidamente at\u00E9 encontrar uma express\u00E3o fechada.',1,100,1);
-I[5][3][2]=new Array('Determinar a complexidade espacial de um algoritmo.','Alternativa errada!',0,0,1);
-I[5][3][3]=new Array('Reduzir a complexidade de algoritmos quadr\u00E1ticos para logar\u00EDtmicos.','Alternativa errada!',0,0,1);
+I[5][3][0]=new Array('T(n)=aT(n/b)+f(n)','Item certo! a \u00E9 o n\u00FAmero de subproblemas b \u00E9 o fator pelo qual o problema \u00E9 reduzido f(n) representa o custo adicional fora das chamadas recursivas Outros formatos de recorr\u00EAncia, como T(n)=T(n\u22121)+f(n), n\u00E3o se encaixam nesse m\u00E9todo.',1,100,1);
+I[5][3][1]=new Array('T(n)=T(n\u22121)+f(n)','Item incorreto!',0,0,1);
+I[5][3][2]=new Array('T(n)=T(n/2)+T(n/3)','Item incorreto!',0,0,1);
+I[5][3][3]=new Array('Nenhuma das anteriores','Item incorreto!',0,0,1);
 I[6]=new Array();I[6][0]=100;
 I[6][1]='';
 I[6][2]='0';
 I[6][3]=new Array();
-I[6][3][0]=new Array('O(n)','Explica\u00E7\u00E3o: Expandindo a recorr\u00EAncia podemos encontrar a solu\u00E7\u00E3o 	Se formos fazer a primeira itera\u00E7\u00E3o, temos: T(n)=T(n\u22121)+1T(n) = T(n - 1) + 1T(n)=T(n\u22121)+1 Aplicamos mais uma vez: T(n-1) = T(n-2) + 1 Depois disso, repetimos o m\u00E9todo realizando  k itera\u00E7\u00F5es: Ap\u00F3s k itera\u00E7\u00F5es: T(n)=T(n\u2212k)+kT(n) = T(n - k) + kT(n)=T(n\u2212k)+k. Depois disso, testamos com um caso base simples. Adotamos n = 1. Caso base: T(1)=1T(1) = 1T(1)=1, logo k=n\u22121k = n - 1k=n\u22121. Por fim, pode-se concluir que: Ent\u00E3o T(n)= n => O(n).',1,100,1);
-I[6][3][1]=new Array('O(log\u2061 n)','Alternativa errada!',0,0,1);
-I[6][3][2]=new Array('O(n^2)','Alternativa errada!',0,0,1);
-I[6][3][3]=new Array('O(1)','Alternativa errada!',0,0,1);
+I[6][3][0]=new Array('\u0398(nb), onde b=logb\u200Ba','Item certo! O M\u00E9todo Mestre compara f(n) com nlog\u2061ba para determinar a complexidade. Dependendo do crescimento de f(n) em rela\u00E7\u00E3o a nlog\u2061ba, aplicamos um dos tr\u00EAs casos do teorema: Caso 1: Se f(n) cresce mais lentamente, T(n)=\u0398(nlog\u2061ba). Caso 2: Se f(n) cresce na mesma taxa, T(n)=\u0398(nlog\u2061ba log \u2061n) Caso 3: Se f(n) cresce mais r\u00E1pido, T(n)=\u0398(f(n)), desde que satisfa\u00E7a a condi\u00E7\u00E3o de regularidade.',1,100,1);
+I[6][3][1]=new Array('\u0398(nc), onde c=loga\u200Bb','Item incorreto!',0,0,1);
+I[6][3][2]=new Array('O(nb), onde b=loga\u200Bn','Item incorreto!',0,0,1);
+I[6][3][3]=new Array('\u03A9(nb), onde b=logb\u200Ba','Item incorreto!',0,0,1);
 I[7]=new Array();I[7][0]=100;
 I[7][1]='';
 I[7][2]='0';
 I[7][3]=new Array();
-I[7][3][0]=new Array('O(n)','Alternativa errada!',0,0,1);
-I[7][3][1]=new Array('O(n log\u2061 n)','Item certo!  Expandimos a recorr\u00EAncia substituindo T(n) por sua defini\u00E7\u00E3o recursiva: Primeira Itera\u00E7\u00E3o: T(n) = 2T(n/2) + n 	Segunda Itera\u00E7\u00E3o: 		Substituimos T(n/2) pela sua defini\u00E7\u00E3o: 		T(n/2) = 2T(n/4) + n/2 		Substituindo na express\u00E3o anterior: 		T(n) = 2[2T(n/4) + n/2] + n = 4T(n/4) + 2n. 	Terceira Itera\u00E7\u00E3o: 		Substitu\u00EDmos T(n/4): 		T(n/4) = 2T(n/8) + n/4 		Substituindo: 		T(n) = 4[2T(n/8) + n/4] + 2n = 8T(n/8) + 3n 	Generalizando, ap\u00F3s k itera\u00E7\u00F5es n\u00F3s temos o padr\u00E3o de: 		T(n) = 2^k T (n/2^k) + k*n 	Adotando o caso base para T(1), temos: 	k = log2 n 	Substituindo o valor por k: 	T(n)  = 2 ^ log2 n  T(1) + (log2 n)*n. 	Sabendo que 2^log2 n = n e assumindo que T(1) \u00E9 uma constante C: 	T(n) = n*c + n log2 n. 	T(n) = O(n log n)',1,100,1);
-I[7][3][2]=new Array('O(n^2)','Alternativa errada!',0,0,1);
-I[7][3][3]=new Array('O(log n)','Alternativa errada!',0,0,1);
+I[7][3][0]=new Array('\u0398(nlog\u2061ba)','Item correto! Esse \u00E9 o Caso 1 do M\u00E9todo Mestre. O M\u00E9todo Mestre compara f(n) com nlog\u2061ba. Se f(n)=\u0398(nc) e c<log\u2061ba, ent\u00E3o a recurs\u00E3o domina o crescimento da fun\u00E7\u00E3o. Nesse caso, a complexidade assint\u00F3tica \u00E9 determinada por nlog\u2061ba, ou seja: T(n)=\u0398(nlog\u2061ba) Portanto, a alternativa correta \u00E9 a letra (a).',1,100,1);
+I[7][3][1]=new Array('\u0398(f(n))','Item incorreto!',0,0,1);
+I[7][3][2]=new Array('\u0398(nc f(n)f(n)log\u2061 n)','Item incorreto!',0,0,1);
+I[7][3][3]=new Array('\u0398(nc)','Item incorreto!',0,0,1);
 I[8]=new Array();I[8][0]=100;
 I[8][1]='';
 I[8][2]='0';
 I[8][3]=new Array();
-I[8][3][0]=new Array('Verdadeiro','Alternativa errada!',0,0,1);
-I[8][3][1]=new Array('Falso','Item certo! Existem outras t\u00E9cnicas para resolver recorr\u00EAncias, como o Teorema Mestre e o m\u00E9todo da substitui\u00E7\u00E3o.',1,100,1);
+I[8][3][0]=new Array('Verdadeiro','Item correto! Esse \u00E9 o Caso 3 do M\u00E9todo Mestre. Se f(n) cresce mais r\u00E1pido que nlog\u2061ba e satisfaz a condi\u00E7\u00E3o de regularidade (af(n/b)\u2264cf(n) para alguma constante c<1), ent\u00E3o a complexidade ser\u00E1 dominada por f(n), resultando em T(n)=\u0398(f(n)).',1,100,1);
+I[8][3][1]=new Array('Falso','Item incorreto!',0,0,1);
 I[9]=new Array();I[9][0]=100;
 I[9][1]='';
 I[9][2]='0';
 I[9][3]=new Array();
-I[9][3][0]=new Array('Verdadeiro','Item certo! Este m\u00E9todo \u00E9 particularmente eficaz para recorr\u00EAncias que surgem em algoritmos que dividem o problema em subproblemas de tamanhos iguais, como o Merge Sort.',1,100,1);
-I[9][3][1]=new Array('Falso','Alternativa errada!',0,0,1);
+I[9][3][0]=new Array('Verdadeiro','Item incorreto!',0,0,1);
+I[9][3][1]=new Array('Falso','Item correto! O M\u00E9todo Mestre n\u00E3o pode ser aplicado a todas as recorr\u00EAncias. Ele funciona apenas para recorr\u00EAncias da forma T(n)=aT(n/b)+f(n), mas n\u00E3o funciona quando: a ou b n\u00E3o s\u00E3o constantes O n\u00FAmero de subproblemas varia com n O termo extra f(n) tem um crescimento irregular, como f(n)=2n Nesses casos, outras t\u00E9cnicas, como Expans\u00E3o da Recorr\u00EAncia ou Teorema de Akra-Bazzi, s\u00E3o mais adequadas.',1,100,1);
 I[10]=new Array();I[10][0]=100;
 I[10][1]='';
 I[10][2]='0';
 I[10][3]=new Array();
-I[10][3][0]=new Array('Verdadeiro','Item certo! Explica\u00E7\u00E3o: Indu\u00E7\u00E3o \u00E9 um m\u00E9todo de provar afirma\u00E7\u00F5es, logo pode verificar sim algoritimos.',1,100,1);
-I[10][3][1]=new Array('Falso','Alternativa errada!',0,0,1);
+I[10][3][0]=new Array('Caso 1','Considerando f(n) = n\u00B9, logo c = 1, como log(b,a) = 2 > c, temos o caso 1.',1,100,1);
+I[10][3][1]=new Array('Caso 2','Item incorreto!',0,0,1);
+I[10][3][2]=new Array('Caso 3','Item incorreto!',0,0,1);
 I[11]=new Array();I[11][0]=100;
 I[11][1]='';
 I[11][2]='0';
 I[11][3]=new Array();
-I[11][3][0]=new Array('Verdadeiro','Alternativa Errada!',0,0,1);
-I[11][3][1]=new Array('Falso','Alternativa certa! Explica\u00E7\u00E3o: Indu\u00E7\u00E3o tamb\u00E9m \u00E9 usado em outras \u00E1reas como a matem\u00E1tica',1,100,1);
+I[11][3][0]=new Array('Caso 1','Item incorreto!',0,0,1);
+I[11][3][1]=new Array('Caso 2','Item incorreto!',0,0,1);
+I[11][3][2]=new Array('Caso 3','Considerando f(n) = n\u00B9, logo c = 1, como log(b,a) = 1/2 < c, al\u00E9m disso, como af(n/b) <= kf(n), para um k < 1, temos o caso 3.',1,100,1);
 I[12]=new Array();I[12][0]=100;
 I[12][1]='';
 I[12][2]='0';
 I[12][3]=new Array();
-I[12][3][0]=new Array('Todos os n\u00FAmeros naturais','Alternativa errada!',0,0,1);
-I[12][3][1]=new Array('Apenas o n\u00FAmero 1','Alternativa errada!',0,0,1);
-I[12][3][2]=new Array('Todas as pot\u00EAncias positivas de 2','Alternativa certa! Explica\u00E7\u00E3o: O passo de indu\u00E7\u00E3o 2n apenas prova para valores que s\u00E3o o dobro de n, assim \u00E9 v\u00E1lido para 2*1 = 2, 2*2 = 4, 2*4 = 8, 2*8 = 16\u2026',1,100,1);
-I[12][3][3]=new Array('Todos os n\u00FAmeros pares','Alternativa errada!',0,0,1);
+I[12][3][0]=new Array('Caso 1','Item incorreto!',0,0,1);
+I[12][3][1]=new Array('Caso 2','Considerando f(n) = n\u00B9, logo c = 1, como log(b,a) = 1 = c, temos o caso 2.',1,100,1);
+I[12][3][2]=new Array('Caso 3','Item incorreto!',0,0,1);
 I[13]=new Array();I[13][0]=100;
 I[13][1]='';
 I[13][2]='0';
 I[13][3]=new Array();
-I[13][3][0]=new Array('Verdadeiro','Alternativa errada!',0,0,1);
-I[13][3][1]=new Array('Falso','Alternativa certa! Explica\u00E7\u00E3o: Apenas foi provado para dois casos bases, sendo assim ainda necess\u00E1rio provar para f(n+1)',1,100,1);
+I[13][3][0]=new Array('Verdadeiro','Item incorreto!',0,0,1);
+I[13][3][1]=new Array('Falso','O valor de a (2\u207F) precisa ser um valor constante para poder aplicar o m\u00E9todo mestre.',1,100,1);
 I[14]=new Array();I[14][0]=100;
 I[14][1]='';
 I[14][2]='0';
 I[14][3]=new Array();
-I[14][3][0]=new Array('N\u00E3o existem conjuntos de n cavalos onde todos s\u00E3o da mesma cor','Alternativa incorreta!',0,0,1);
-I[14][3][1]=new Array('N\u00E3o h\u00E1 erros no exemplo','Alternativa incorreta!',0,0,1);
-I[14][3][2]=new Array('Em 4-, \u00E9 feito uma suposi\u00E7\u00E3o impl\u00EDcita de o tamanho do conjunto de cavalos \u00E9 pelo menos 3, para que haja pelo menos um cavalo em comum quando o primeiro e segundo cavalo s\u00E3o retirados','Explica\u00E7\u00E3o: https://en.wikipedia.org/wiki/All_horses_are_the_same_color',1,100,1);
-I[14][3][3]=new Array('Um conjunto com apenas 1 cavalo, n\u00E3o possui todos os cavalos da mesma cor','Alternativa incorreta!',0,0,1);
+I[14][3][0]=new Array('Verdadeiro','Item correto!',1,100,1);
+I[14][3][1]=new Array('Falso','Item incorreto!',0,0,1);
 
 
 function StartUp(){
@@ -1640,7 +1643,7 @@ function CheckFinished(){
 
 
 
-<button class="NavButton" onclick="location='M&#233;todoMestre.htm'; return false;">=&gt;</button>
+<button class="NavButton" onclick="location='ArvoreRecursao.htm'; return false;">=&gt;</button>
 
 
 </div>
@@ -1650,7 +1653,7 @@ function CheckFinished(){
 <!-- EndTopNavButtons -->
 
 <div class="Titles">
-	<h2 class="ExerciseTitle">Indu&#x00E7;&#x00E3;o</h2>
+	<h2 class="ExerciseTitle">M&#x00E9;todo Mestre</h2>
 
 	<h3 class="ExerciseSubtitle">Quiz</h3>
 
@@ -1687,21 +1690,21 @@ function CheckFinished(){
 </div>
  
 <ol class="QuizQuestions" id="Questions">
-<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">Sobre o m&#x00E9;todo de indu&#x00E7;&#x00E3;o pode-se afirmar o seguinte: Dado que uma determinada fun&#x00E7;&#x00E3;o F &#x00E9; verdadeira para uma constante C. Devemos provar que F(n) &#x00E9; verdadeiro para todo n maior que 	C, assumindo que f(n+1) &#x00E9; verdadeiro.</div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_0_1"><button class="FuncButton" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
-<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">atrav&#x00E9;s do m&#x00E9;todo de indu&#x00E7;&#x00E3;o &#x00E9; poss&#x00ED;vel provar que:<br />		1^3+2^3+3^3+...+n^3 = (n^2(n+1)^2)/4</div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_1_1"><button class="FuncButton" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
-<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">atrav&#x00E9;s do m&#x00E9;todo de indu&#x00E7;&#x00E3;o &#x00E9; poss&#x00ED;vel provar que:<br />		1+3+5+...+(2n-1) = n^2</div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_2_1"><button class="FuncButton" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
-<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Para provar a veracidade de um algoritmo recursivo, devemos:<br />	1 - ter como base exemplos da utiliza&#x00E7;&#x00E3;o do algoritmo<br />	2 - supor que esse comportamento &#x00E9; similar para todos os subproblemas<br />	3 - mostar que 2 est&#x00E1; correto<br /></div><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_3_1"><button class="FuncButton" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
-<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">Julgue se a seguinte solu&#x00E7;&#x00E3;o matem&#x00E1;tica para t(n) est&#x00E1; correta:<br /><br />	Quando n &#x00E9; uma potencia de 2 a solu&#x00E7;&#x00E3;o da recorr&#x00EA;ncia &#x00E9; nlgn.<br />	<br />	para T(n)={2 se n = 2}{2T(n/2) + n para n=2^k e k&gt;1}<br /></div><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_4_1"><button class="FuncButton" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
-<li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">Qual &#x00E9; o principal objetivo do m&#x00E9;todo da itera&#x00E7;&#x00E3;o na an&#x00E1;lise de algoritmos?</div><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">?</button>&#160;&#160;Determinar o n&#x00FA;mero exato de opera&#x00E7;&#x00F5;es executadas pelo algoritmo.</li><li id="Q_5_1"><button class="FuncButton" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">?</button>&#160;&#160;Resolver recorr&#x00EA;ncias substituindo os termos repetidamente at&#x00E9; encontrar um padr&#x00E3;o.</li><li id="Q_5_2"><button class="FuncButton" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">?</button>&#160;&#160;Determinar a complexidade espacial de um algoritmo.</li><li id="Q_5_3"><button class="FuncButton" id="Q_5_3_Btn" onclick="CheckMCAnswer(5,3,this)">?</button>&#160;&#160;Reduzir a complexidade de algoritmos quadr&#x00E1;ticos para logar&#x00ED;tmicos.</li></ol></li>
-<li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">Considerando a recorr&#x00EA;ncia T(n) = T(n-1)+1T(n) = T(n-1) + 1T(n) = T(n-1) +1, qual &#x00E9; a complexidade de tempo usando o m&#x00E9;todo da itera&#x00E7;&#x00E3;o?</div><ol class="MCAnswers"><li id="Q_6_0"><button class="FuncButton" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">?</button>&#160;&#160;O(n)</li><li id="Q_6_1"><button class="FuncButton" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">?</button>&#160;&#160;O(log&#x2061; n)</li><li id="Q_6_2"><button class="FuncButton" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">?</button>&#160;&#160;O(n^2)</li><li id="Q_6_3"><button class="FuncButton" id="Q_6_3_Btn" onclick="CheckMCAnswer(6,3,this)">?</button>&#160;&#160;O(1)</li></ol></li>
-<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">Se temos a recorr&#x00EA;ncia T(n) = 2T(n/2) + 2 n, qual &#x00E9; a sua complexidade assint&#x00F3;tica?</div><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">?</button>&#160;&#160;O(n)</li><li id="Q_7_1"><button class="FuncButton" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">?</button>&#160;&#160;O(n log&#x2061; n)</li><li id="Q_7_2"><button class="FuncButton" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">?</button>&#160;&#160;O(n^2)</li><li id="Q_7_3"><button class="FuncButton" id="Q_7_3_Btn" onclick="CheckMCAnswer(7,3,this)">?</button>&#160;&#160;O(log n)</li></ol></li>
-<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">O m&#x00E9;todo da itera&#x00E7;&#x00E3;o &#x00E9; a &#x00FA;nica t&#x00E9;cnica dispon&#x00ED;vel para resolver recorr&#x00EA;ncias em an&#x00E1;lise de algoritmos.	</div><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_8_1"><button class="FuncButton" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
-<li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">O m&#x00E9;todo da itera&#x00E7;&#x00E3;o &#x00E9; especialmente &#x00FA;til para analisar algoritmos recursivos que dividem o problema em subproblemas de tamanhos iguais.</div><ol class="MCAnswers"><li id="Q_9_0"><button class="FuncButton" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_9_1"><button class="FuncButton" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
-<li class="QuizQuestion" id="Q_10" style="display: none;"><div class="QuestionText">A indu&#x00E7;&#x00E3;o pode ser usada para verificar a corretude de algoritmos.</div><ol class="MCAnswers"><li id="Q_10_0"><button class="FuncButton" id="Q_10_0_Btn" onclick="CheckMCAnswer(10,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_10_1"><button class="FuncButton" id="Q_10_1_Btn" onclick="CheckMCAnswer(10,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
-<li class="QuizQuestion" id="Q_11" style="display: none;"><div class="QuestionText">Indu&#x00E7;&#x00E3;o &#x00E9; um conceito exclusivo de projeto e an&#x00E1;lise de algor&#x00ED;timos</div><ol class="MCAnswers"><li id="Q_11_0"><button class="FuncButton" id="Q_11_0_Btn" onclick="CheckMCAnswer(11,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_11_1"><button class="FuncButton" id="Q_11_1_Btn" onclick="CheckMCAnswer(11,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
-<li class="QuizQuestion" id="Q_12" style="display: none;"><div class="QuestionText">Se uma fun&#x00E7;&#x00E3;o &#x00E9; v&#x00E1;lida para n = 1, assumindo que ela &#x00E9; v&#x00E1;lida para f(n) &#x00E9; provado que ela &#x00E9; v&#x00E1;lida para f(2n). Dessa forma, essa fun&#x00E7;&#x00E3;o &#x00E9; correta para</div><ol class="MCAnswers"><li id="Q_12_0"><button class="FuncButton" id="Q_12_0_Btn" onclick="CheckMCAnswer(12,0,this)">?</button>&#160;&#160;Todos os n&#x00FA;meros naturais</li><li id="Q_12_1"><button class="FuncButton" id="Q_12_1_Btn" onclick="CheckMCAnswer(12,1,this)">?</button>&#160;&#160;Apenas o n&#x00FA;mero 1</li><li id="Q_12_2"><button class="FuncButton" id="Q_12_2_Btn" onclick="CheckMCAnswer(12,2,this)">?</button>&#160;&#160;Todas as pot&#x00EA;ncias positivas de 2</li><li id="Q_12_3"><button class="FuncButton" id="Q_12_3_Btn" onclick="CheckMCAnswer(12,3,this)">?</button>&#160;&#160;Todos os n&#x00FA;meros pares</li></ol></li>
-<li class="QuizQuestion" id="Q_13" style="display: none;"><div class="QuestionText">Se um algoritmo funciona para n = 1, caso seja provado que ele funcione para n = 2, &#x00E9; poss&#x00ED;vel afirmar que, por indu&#x00E7;&#x00E3;o, ele funciona para todos os n&#x00FA;meros naturais</div><ol class="MCAnswers"><li id="Q_13_0"><button class="FuncButton" id="Q_13_0_Btn" onclick="CheckMCAnswer(13,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_13_1"><button class="FuncButton" id="Q_13_1_Btn" onclick="CheckMCAnswer(13,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
-<li class="QuizQuestion" id="Q_14" style="display: none;"><div class="QuestionText">Onde est&#x00E1; a falha no seguinte exemplo?<br />	1 - Em um conjunto de n = 1 cavalo, todos os cavalos s&#x00E3;o da mesma cor<br />	2 - Assumindo que, em um conjunto de n cavalos, todos s&#x00E3;o da mesma cor, provar que, em um conjunto de n + 1 cavalos, tamb&#x00E9;m s&#x00E3;o todos da mesma cor<br />	3 - Retirando um cavalo aleat&#x00F3;rio do conjunto de n+1, volta-se ao conjunto de n cavalos, onde todos s&#x00E3;o da mesma cor<br />	4- Devolvendo o cavalo retirado e retirando um outro diferente, volta-se ao conjunto de n cavalos, onde todos s&#x00E3;o da mesma cor. Dessa forma mostra-se o cavalo adicional, independente de qual seja, &#x00E9; da mesma cor que todos os outros cavalos do conjunto de n cavalos. Ou seja, considerando o conjunto de n cavalos, onde todos s&#x00E3;o da mesma cor, o conjunto n+1 cavalos tamb&#x00E9;m ter&#x00E1; todos da mesma cor.<br />	5- Assim, como o conjunto de 1 cavalo &#x00E9; todo da mesma cor e o conjunto de n+1 cavalos s&#x00E3;o da mesma cor, todos os cavalos s&#x00E3;o da mesma cor.<br /></div><ol class="MCAnswers"><li id="Q_14_0"><button class="FuncButton" id="Q_14_0_Btn" onclick="CheckMCAnswer(14,0,this)">?</button>&#160;&#160;N&#x00E3;o existem conjuntos de n cavalos onde todos s&#x00E3;o da mesma cor</li><li id="Q_14_1"><button class="FuncButton" id="Q_14_1_Btn" onclick="CheckMCAnswer(14,1,this)">?</button>&#160;&#160;N&#x00E3;o h&#x00E1; erros no exemplo</li><li id="Q_14_2"><button class="FuncButton" id="Q_14_2_Btn" onclick="CheckMCAnswer(14,2,this)">?</button>&#160;&#160;Em 4-, &#x00E9; feito uma suposi&#x00E7;&#x00E3;o impl&#x00ED;cita de o tamanho do conjunto de cavalos &#x00E9; pelo menos 3, para que haja pelo menos um cavalo em comum quando o primeiro e segundo cavalo s&#x00E3;o retirados</li><li id="Q_14_3"><button class="FuncButton" id="Q_14_3_Btn" onclick="CheckMCAnswer(14,3,this)">?</button>&#160;&#160;Um conjunto com apenas 1 cavalo, n&#x00E3;o possui todos os cavalos da mesma cor</li></ol></li></ol>
+<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">O m&#x00E9;todo mestre se aplica quando:</div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">?</button>&#160;&#160;a&gt;=1, b &lt;= 1 e f &#x00E9; assint&#x00F3;ticamente positiva</li><li id="Q_0_1"><button class="FuncButton" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">?</button>&#160;&#160;a&gt;=1, b &gt; 1 e f &#x00E9; assint&#x00F3;ticamente positiva</li><li id="Q_0_2"><button class="FuncButton" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">?</button>&#160;&#160;a == 1 , b &lt;= 1 e f &#x00E9; assint&#x00F3;ticamente positiva</li><li id="Q_0_3"><button class="FuncButton" id="Q_0_3_Btn" onclick="CheckMCAnswer(0,3,this)">?</button>&#160;&#160;a &gt;= 1 , b &gt; 1 e f &#x00E9; assint&#x00F3;ticamente negativa</li></ol></li>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">Para a fun&#x00E7;&#x00E3;o T(n) = 4T(n/2) + n os valores corretos para "b", "a" e f(n) no m&#x00E9;todo mestre:</div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">?</button>&#160;&#160;b = 2, a = 4 , f(n) = n</li><li id="Q_1_1"><button class="FuncButton" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">?</button>&#160;&#160;b = 4, a = 2 , f(n) = n</li><li id="Q_1_2"><button class="FuncButton" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">?</button>&#160;&#160;b = 1/2, a = 4 , f(n) = n</li><li id="Q_1_3"><button class="FuncButton" id="Q_1_3_Btn" onclick="CheckMCAnswer(1,3,this)">?</button>&#160;&#160;b = 1/2, a = 4 , f(n) = n</li></ol></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">Usando o m&#x00E9;todo mestre &#x00E9; poss&#x00ED;vel determinar T(n) = 4T(n/2) + n o fator de crescimento por meio do caso 1.</div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_2_1"><button class="FuncButton" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Usando o m&#x00E9;todo mestre &#x00E9; poss&#x00ED;vel determinar T(n) = 4T(n/2) + n^2 log n o fator de crescimento por meio do caso 2 estendido.</div><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_3_1"><button class="FuncButton" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">Usando o m&#x00E9;todo mestre &#x00E9; poss&#x00ED;vel determinar T(n) = T(n/2) + log n o fator de crescimento por meio do caso 3.</div><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_4_1"><button class="FuncButton" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">O M&#x00E9;todo Mestre &#x00E9; utilizado para resolver recorr&#x00EA;ncias do tipo:</div><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">?</button>&#160;&#160;T(n)=aT(n/b)+f(n)</li><li id="Q_5_1"><button class="FuncButton" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">?</button>&#160;&#160;T(n)=T(n&#x2212;1)+f(n)</li><li id="Q_5_2"><button class="FuncButton" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">?</button>&#160;&#160;T(n)=T(n/2)+T(n/3)</li><li id="Q_5_3"><button class="FuncButton" id="Q_5_3_Btn" onclick="CheckMCAnswer(5,3,this)">?</button>&#160;&#160;Nenhuma das anteriores</li></ol></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">No M&#x00E9;todo Mestre, a fun&#x00E7;&#x00E3;o de complexidade f(n) &#x00E9; comparada com:</div><ol class="MCAnswers"><li id="Q_6_0"><button class="FuncButton" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">?</button>&#160;&#160;&#x0398;(nb), onde b=logb&#x200B;a</li><li id="Q_6_1"><button class="FuncButton" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">?</button>&#160;&#160;&#x0398;(nc), onde c=loga&#x200B;b</li><li id="Q_6_2"><button class="FuncButton" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">?</button>&#160;&#160;O(nb), onde b=loga&#x200B;n</li><li id="Q_6_3"><button class="FuncButton" id="Q_6_3_Btn" onclick="CheckMCAnswer(6,3,this)">?</button>&#160;&#160;&#x03A9;(nb), onde b=logb&#x200B;a</li></ol></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">No M&#x00E9;todo Mestre, se f(n)=&#x0398;(nc) com c &lt; log&#x2061;ba, a complexidade assint&#x00F3;tica &#x00E9;:</div><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">?</button>&#160;&#160;&#x0398;(nlog&#x2061;ba)</li><li id="Q_7_1"><button class="FuncButton" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">?</button>&#160;&#160;&#x0398;(f(n))</li><li id="Q_7_2"><button class="FuncButton" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">?</button>&#160;&#160;&#x0398;(nc f(n)f(n)log&#x2061; n)</li><li id="Q_7_3"><button class="FuncButton" id="Q_7_3_Btn" onclick="CheckMCAnswer(7,3,this)">?</button>&#160;&#160;&#x0398;(nc)</li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">Se f(n) cresce mais r&#x00E1;pido que nlog&#x2061;ba, o termo dominante da complexidade ser&#x00E1; sempre f(n).</div><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_8_1"><button class="FuncButton" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">O M&#x00E9;todo Mestre pode ser aplicado a qualquer recorr&#x00EA;ncia que envolva divis&#x00E3;o do problema em subproblemas menores.</div><ol class="MCAnswers"><li id="Q_9_0"><button class="FuncButton" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_9_1"><button class="FuncButton" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
+<li class="QuizQuestion" id="Q_10" style="display: none;"><div class="QuestionText">Dado a rela&#x00E7;&#x00E3;o de recorr&#x00EA;ncia T(n) = 4 * T(n/2) + n, se for aplicado o m&#x00E9;todo mestre para resolver essa rela&#x00E7;&#x00E3;o, qual ser&#x00E1; o caso referente a essa rela&#x00E7;&#x00E3;o?</div><ol class="MCAnswers"><li id="Q_10_0"><button class="FuncButton" id="Q_10_0_Btn" onclick="CheckMCAnswer(10,0,this)">?</button>&#160;&#160;Caso 1</li><li id="Q_10_1"><button class="FuncButton" id="Q_10_1_Btn" onclick="CheckMCAnswer(10,1,this)">?</button>&#160;&#160;Caso 2</li><li id="Q_10_2"><button class="FuncButton" id="Q_10_2_Btn" onclick="CheckMCAnswer(10,2,this)">?</button>&#160;&#160;Caso 3</li></ol></li>
+<li class="QuizQuestion" id="Q_11" style="display: none;"><div class="QuestionText">Dado a rela&#x00E7;&#x00E3;o de recorr&#x00EA;ncia T(n) = 2 * T(n/4) + n, se for aplicado o m&#x00E9;todo mestre para resolver essa rela&#x00E7;&#x00E3;o, qual ser&#x00E1; o caso referente a essa rela&#x00E7;&#x00E3;o?</div><ol class="MCAnswers"><li id="Q_11_0"><button class="FuncButton" id="Q_11_0_Btn" onclick="CheckMCAnswer(11,0,this)">?</button>&#160;&#160;Caso 1</li><li id="Q_11_1"><button class="FuncButton" id="Q_11_1_Btn" onclick="CheckMCAnswer(11,1,this)">?</button>&#160;&#160;Caso 2</li><li id="Q_11_2"><button class="FuncButton" id="Q_11_2_Btn" onclick="CheckMCAnswer(11,2,this)">?</button>&#160;&#160;Caso 3</li></ol></li>
+<li class="QuizQuestion" id="Q_12" style="display: none;"><div class="QuestionText">Dado a rela&#x00E7;&#x00E3;o de recorr&#x00EA;ncia T(n) = 2 * T(n/2) + n, se for aplicado o m&#x00E9;todo mestre para resolver essa rela&#x00E7;&#x00E3;o, qual ser&#x00E1; o caso referente a essa rela&#x00E7;&#x00E3;o?</div><ol class="MCAnswers"><li id="Q_12_0"><button class="FuncButton" id="Q_12_0_Btn" onclick="CheckMCAnswer(12,0,this)">?</button>&#160;&#160;Caso 1</li><li id="Q_12_1"><button class="FuncButton" id="Q_12_1_Btn" onclick="CheckMCAnswer(12,1,this)">?</button>&#160;&#160;Caso 2</li><li id="Q_12_2"><button class="FuncButton" id="Q_12_2_Btn" onclick="CheckMCAnswer(12,2,this)">?</button>&#160;&#160;Caso 3</li></ol></li>
+<li class="QuizQuestion" id="Q_13" style="display: none;"><div class="QuestionText">&#x00C9; poss&#x00ED;vel aplicar o m&#x00E9;todo mestre nessa rela&#x00E7;&#x00E3;o de recorr&#x00EA;ncia: T(n) = 2&#x207F; * T(n/2) + n&#x207F;.</div><ol class="MCAnswers"><li id="Q_13_0"><button class="FuncButton" id="Q_13_0_Btn" onclick="CheckMCAnswer(13,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_13_1"><button class="FuncButton" id="Q_13_1_Btn" onclick="CheckMCAnswer(13,1,this)">?</button>&#160;&#160;Falso</li></ol></li>
+<li class="QuizQuestion" id="Q_14" style="display: none;"><div class="QuestionText">&#x00C9; poss&#x00ED;vel aplicar o m&#x00E9;todo mestre nessa rela&#x00E7;&#x00E3;o de recorr&#x00EA;ncia: T(n) = 11,4 * T(n/3,3) + n^(1/2).</div><ol class="MCAnswers"><li id="Q_14_0"><button class="FuncButton" id="Q_14_0_Btn" onclick="CheckMCAnswer(14,0,this)">?</button>&#160;&#160;Verdadeiro</li><li id="Q_14_1"><button class="FuncButton" id="Q_14_1_Btn" onclick="CheckMCAnswer(14,1,this)">?</button>&#160;&#160;Falso</li></ol></li></ol>
 
 
 
@@ -1728,7 +1731,7 @@ function CheckFinished(){
 
 
 
-<button class="NavButton" onclick="location='M&#233;todoMestre.htm'; return false;">=&gt;</button>
+<button class="NavButton" onclick="location='ArvoreRecursao.htm'; return false;">=&gt;</button>
 
 
 </div>
